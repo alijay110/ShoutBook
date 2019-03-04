@@ -13,9 +13,11 @@ hs_err_pid*
 
 .mvn/
 .gradle/
+.DS_Store
 
 build/
 target/HELP.md
+**/HELP.md
 **/target/**
 !.mvn/wrapper/maven-wrapper.jar
 
