@@ -12,14 +12,5 @@ import com.shoutbook.AuthenticationService.repository.UserRepository;
 @Service("userService")
 public class UserService {
 
-	@Autowired
-	UserRepository userRepository;
 	
-	public List<User> getUsers(){
-		Stream.of("Kentucky Brunch Brand Stout", "Good Morning", "Very Hazy", "King Julius",
-                "Budweiser", "Coors Light", "PBR").forEach(name ->
-                userRepository.save(new User(name)));
-        
-                return userRepository.findAll();
-	}
 }

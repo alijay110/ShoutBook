@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.google.gson.Gson;
@@ -19,7 +20,7 @@ public class UserController {
 	@GetMapping("/users")
 	@CrossOrigin(origins = "http://localhost:8080")
 	public String getUsers() {
-		Map<String,String> obj1 = new HashMap<>();
+		Map<String,String> obj1 = new HashMap<String,String>();
 		obj1.put("name", "Shubham Mangla");
 		return new Gson().toJson(obj1);
 	}
